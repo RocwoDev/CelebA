@@ -6,9 +6,9 @@ import torch
 
 
 class CelebA(Dataset):
-    eval_partition_path = Path("Eval", "list_eval_partition.txt")
-    identity_anno_path = Path("Anno", "identity_CelebA.txt")
-    images_repo_path = Path("Images.zip")
+    eval_partition_path = Path(__file__).parent / "Eval" / "list_eval_partition.txt"
+    identity_anno_path = Path(__file__).parent / "Anno" / "identity_CelebA.txt"
+    images_repo_path = Path(__file__).parent / "Images.zip"
 
     def __init__(self, eval_str: str, transform=None, target_transform=None):
         """
