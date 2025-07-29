@@ -1,0 +1,1 @@
+from .dataset import CelebA as CelebA

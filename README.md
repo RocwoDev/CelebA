@@ -55,7 +55,7 @@ Required files (not included):
 
 3. **Use in PyTorch**:
    ```python
-   from CelebA.dataset import CelebA
+   from CelebA import CelebA
    train_dataset = CelebA("train", transform=None, target_transform=None)
    img, identity = train_dataset[0]  # Access image and identity
    ```
